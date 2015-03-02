@@ -38,6 +38,14 @@ describe("Extending Constructors", function() {
 
   });
 
+  it("should take methods from parent constructors and apply them to child", function(){
+
+    var boat = new Boat;
+
+    expect(boat.travel).to.eq("goodbye");
+    expect(boat.setSail).to.eq("ahoy");
+  })
+
 });
 
 describe("Extending Objects With _.extend", function() {

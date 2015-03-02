@@ -1,5 +1,5 @@
 function Vehicle() {
-  this.notLiving = true;
+  this.travel = "goodbye";
 };
 
   function LandVehicle() {
@@ -42,6 +42,7 @@ function Vehicle() {
 
       function Boat() {
         SeaVessel.call(this);
+        this.setSail = "ahoy"
       };
 
       Boat.prototype = Object.create(SeaVessel.prototype);
@@ -54,13 +55,13 @@ var extendee = {name: "Gizmo", animal: "dog"}
   var extended = _.extend(extendee);
 
 
-function params(parameters) {
-  var defaults = {
-    name: "gizmo",
-    animal: "dog",
-    page: 1
-  };
+  function params(parameters) {
+    var defaults = {
+      name: "gizmo",
+      animal: "dog",
+      page: 1
+    };
 
-  var param = _.extend({}, defaults, parameters);
-    return param;
-}
+    var param = _.extend({}, defaults, parameters);
+      return param;
+  }
