@@ -52,3 +52,15 @@ function Vehicle() {
 var extendee = {name: "Gizmo", animal: "dog"}
 
   var extended = _.extend(extendee);
+
+
+function params(parameters) {
+  var defaults = {
+    name: "gizmo",
+    animal: "dog",
+    page: 1
+  };
+
+  var param = _.extend({}, defaults, parameters);
+    return param;
+}
