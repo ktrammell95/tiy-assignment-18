@@ -45,3 +45,10 @@ function Vehicle() {
       };
 
       Boat.prototype = Object.create(SeaVessel.prototype);
+
+
+
+
+var extendee = {name: "Gizmo", animal: "dog"}
+
+  var extended = _.extend(extendee);
