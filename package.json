@@ -1,0 +1,17 @@
+{
+  "name": "tiy-assignment-18",
+  "version": "1.0.0",
+  "description": "backbone",
+  "main": "test.extending.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backbone"
+  ],
+  "author": "Ktrammell",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.2"
+  }
+}
