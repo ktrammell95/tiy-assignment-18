@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>More testing</title>
+  <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <!-- Dependencies -->
+  <script src="bower_components/underscore/underscore.js"></script>
+
+  <!--Scripts to be tested-->
+  <script src="js/homework.js"></script>
+
+  <!--BDD scripts mocha/chai-->
+  <script src="bower_components/chai/chai.js"></script>
+  <script src="bower_components/mocha/mocha.js"></script>
+
+  <!-- Tell mocha to use BDD style testing -->
+  <script>mocha.setup('bdd')</script>
+
+  <!--tests-->
+  <script src="test/test.extending.js"></script>
+
+  <!-- Kick it all off -->
+<script>
+  var expect = chai.expect;
+  mocha.checkLeaks();
+  mocha.globals(["_"]);
+  mocha.run();
+</script>
+
+
+</body>
+</html>

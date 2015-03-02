@@ -20,5 +20,8 @@
   "dependencies": {
     "chai": "~2.1.0",
     "mocha": "~2.1.0"
+  },
+  "devDependencies": {
+    "underscore": "~1.8.2"
   }
 }
